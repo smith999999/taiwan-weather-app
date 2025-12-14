@@ -1,0 +1,20 @@
+{
+  "name": "taiwan-weather-app",
+  "private": true,
+  "version": "0.0.0",
+  // ... 其他設定 ...
+
+  // 1. 新增 homepage 屬性 (請替換成您自己的資訊)
+  "homepage": "https://<YOUR_USERNAME>.github.io/<YOUR_REPOSITORY_NAME>",
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    // 2. 新增以下兩個指令
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  // ... 其他設定 ...
+}
